@@ -1,0 +1,11 @@
+D:\Faculdade Coisas\Progamacao Visual\Atividade 05\Atividade 05\bin\Debug\Atividade 05.exe.config
+D:\Faculdade Coisas\Progamacao Visual\Atividade 05\Atividade 05\bin\Debug\Atividade 05.exe
+D:\Faculdade Coisas\Progamacao Visual\Atividade 05\Atividade 05\bin\Debug\Atividade 05.pdb
+D:\Faculdade Coisas\Progamacao Visual\Atividade 05\Atividade 05\obj\Debug\Atividade 05.csproj.AssemblyReference.cache
+D:\Faculdade Coisas\Progamacao Visual\Atividade 05\Atividade 05\obj\Debug\Atividade_05.Form1.resources
+D:\Faculdade Coisas\Progamacao Visual\Atividade 05\Atividade 05\obj\Debug\Atividade_05.Properties.Resources.resources
+D:\Faculdade Coisas\Progamacao Visual\Atividade 05\Atividade 05\obj\Debug\Atividade 05.csproj.GenerateResource.cache
+D:\Faculdade Coisas\Progamacao Visual\Atividade 05\Atividade 05\obj\Debug\Atividade 05.csproj.CoreCompileInputs.cache
+D:\Faculdade Coisas\Progamacao Visual\Atividade 05\Atividade 05\obj\Debug\Atividade 05.exe
+D:\Faculdade Coisas\Progamacao Visual\Atividade 05\Atividade 05\obj\Debug\Atividade 05.pdb
+D:\Faculdade Coisas\Progamacao Visual\Atividade 05\Atividade 05\obj\Debug\Atividade 05.exe.config
