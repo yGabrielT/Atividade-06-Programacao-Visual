@@ -30,6 +30,10 @@
         {
             this.label1 = new System.Windows.Forms.Label();
             this.grpEntrada = new System.Windows.Forms.GroupBox();
+            this.btnAdicionarItem = new System.Windows.Forms.Button();
+            this.grpEntrega = new System.Windows.Forms.GroupBox();
+            this.rdbEntrega = new System.Windows.Forms.RadioButton();
+            this.rdbRetirada = new System.Windows.Forms.RadioButton();
             this.lstItensPedido = new System.Windows.Forms.ListBox();
             this.grpOpcoes = new System.Windows.Forms.GroupBox();
             this.chkCupom = new System.Windows.Forms.CheckBox();
@@ -40,35 +44,33 @@
             this.lblQuantidade = new System.Windows.Forms.Label();
             this.lblProduto = new System.Windows.Forms.Label();
             this.lblCliente = new System.Windows.Forms.Label();
-            this.grpEntrega = new System.Windows.Forms.GroupBox();
-            this.rdbEntrega = new System.Windows.Forms.RadioButton();
-            this.rdbRetirada = new System.Windows.Forms.RadioButton();
-            this.btnAdicionarItem = new System.Windows.Forms.Button();
             this.grpResumo = new System.Windows.Forms.GroupBox();
-            this.lblResumo = new System.Windows.Forms.Label();
-            this.lblProtocolo = new System.Windows.Forms.Label();
             this.lblDataHora = new System.Windows.Forms.Label();
+            this.lblProtocolo = new System.Windows.Forms.Label();
+            this.lblResumo = new System.Windows.Forms.Label();
             this.brnGerarPedido = new System.Windows.Forms.Button();
             this.btnGerarNovoPedido = new System.Windows.Forms.Button();
             this.btnSair = new System.Windows.Forms.Button();
             this.grpEntrada.SuspendLayout();
-            this.grpOpcoes.SuspendLayout();
             this.grpEntrega.SuspendLayout();
+            this.grpOpcoes.SuspendLayout();
             this.grpResumo.SuspendLayout();
             this.SuspendLayout();
             // 
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Arial", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(74, 9);
+            this.label1.Font = new System.Drawing.Font("Arial", 20.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.ForeColor = System.Drawing.SystemColors.ButtonFace;
+            this.label1.Location = new System.Drawing.Point(12, 9);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(166, 24);
+            this.label1.Size = new System.Drawing.Size(221, 32);
             this.label1.TabIndex = 0;
             this.label1.Text = "Pedido Simples";
             // 
             // grpEntrada
             // 
+            this.grpEntrada.BackColor = System.Drawing.Color.MediumPurple;
             this.grpEntrada.Controls.Add(this.btnAdicionarItem);
             this.grpEntrada.Controls.Add(this.grpEntrega);
             this.grpEntrada.Controls.Add(this.lstItensPedido);
@@ -80,17 +82,65 @@
             this.grpEntrada.Controls.Add(this.lblProduto);
             this.grpEntrada.Controls.Add(this.lblCliente);
             this.grpEntrada.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.grpEntrada.Location = new System.Drawing.Point(12, 36);
+            this.grpEntrada.Location = new System.Drawing.Point(12, 47);
             this.grpEntrada.Name = "grpEntrada";
-            this.grpEntrada.Size = new System.Drawing.Size(360, 464);
+            this.grpEntrada.Size = new System.Drawing.Size(360, 453);
             this.grpEntrada.TabIndex = 1;
             this.grpEntrada.TabStop = false;
             this.grpEntrada.Text = "Entrada de Dados";
             // 
+            // btnAdicionarItem
+            // 
+            this.btnAdicionarItem.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnAdicionarItem.Location = new System.Drawing.Point(9, 413);
+            this.btnAdicionarItem.Name = "btnAdicionarItem";
+            this.btnAdicionarItem.Size = new System.Drawing.Size(319, 36);
+            this.btnAdicionarItem.TabIndex = 4;
+            this.btnAdicionarItem.Text = "Adicionar Item";
+            this.btnAdicionarItem.UseVisualStyleBackColor = true;
+            // 
+            // grpEntrega
+            // 
+            this.grpEntrega.Controls.Add(this.rdbEntrega);
+            this.grpEntrega.Controls.Add(this.rdbRetirada);
+            this.grpEntrega.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.grpEntrega.Location = new System.Drawing.Point(9, 164);
+            this.grpEntrega.Name = "grpEntrega";
+            this.grpEntrega.Size = new System.Drawing.Size(319, 63);
+            this.grpEntrega.TabIndex = 1;
+            this.grpEntrega.TabStop = false;
+            this.grpEntrega.Text = "Tipo de Entrega";
+            // 
+            // rdbEntrega
+            // 
+            this.rdbEntrega.AutoSize = true;
+            this.rdbEntrega.Location = new System.Drawing.Point(98, 25);
+            this.rdbEntrega.Name = "rdbEntrega";
+            this.rdbEntrega.Size = new System.Drawing.Size(81, 22);
+            this.rdbEntrega.TabIndex = 0;
+            this.rdbEntrega.TabStop = true;
+            this.rdbEntrega.Text = "Entrada";
+            this.rdbEntrega.UseVisualStyleBackColor = true;
+            // 
+            // rdbRetirada
+            // 
+            this.rdbRetirada.AutoSize = true;
+            this.rdbRetirada.Location = new System.Drawing.Point(6, 25);
+            this.rdbRetirada.Name = "rdbRetirada";
+            this.rdbRetirada.Size = new System.Drawing.Size(86, 22);
+            this.rdbRetirada.TabIndex = 0;
+            this.rdbRetirada.TabStop = true;
+            this.rdbRetirada.Text = "Retirada";
+            this.rdbRetirada.UseVisualStyleBackColor = true;
+            // 
             // lstItensPedido
             // 
+            this.lstItensPedido.BackColor = System.Drawing.Color.Honeydew;
             this.lstItensPedido.FormattingEnabled = true;
             this.lstItensPedido.ItemHeight = 18;
+            this.lstItensPedido.Items.AddRange(new object[] {
+            "Itens no Carrinho",
+            "[Vazio]"});
             this.lstItensPedido.Location = new System.Drawing.Point(9, 331);
             this.lstItensPedido.Name = "lstItensPedido";
             this.lstItensPedido.Size = new System.Drawing.Size(319, 76);
@@ -130,6 +180,7 @@
             // 
             // cmbProduto
             // 
+            this.cmbProduto.BackColor = System.Drawing.Color.Honeydew;
             this.cmbProduto.FormattingEnabled = true;
             this.cmbProduto.Items.AddRange(new object[] {
             "Laptop",
@@ -146,6 +197,7 @@
             // 
             // txtQuantidade
             // 
+            this.txtQuantidade.BackColor = System.Drawing.Color.Honeydew;
             this.txtQuantidade.Location = new System.Drawing.Point(101, 121);
             this.txtQuantidade.Name = "txtQuantidade";
             this.txtQuantidade.Size = new System.Drawing.Size(227, 26);
@@ -153,6 +205,7 @@
             // 
             // txtCliente
             // 
+            this.txtCliente.BackColor = System.Drawing.Color.Honeydew;
             this.txtCliente.Location = new System.Drawing.Point(101, 40);
             this.txtCliente.Name = "txtCliente";
             this.txtCliente.Size = new System.Drawing.Size(227, 26);
@@ -185,92 +238,49 @@
             this.lblCliente.TabIndex = 0;
             this.lblCliente.Text = "Cliente:";
             // 
-            // grpEntrega
-            // 
-            this.grpEntrega.Controls.Add(this.rdbEntrega);
-            this.grpEntrega.Controls.Add(this.rdbRetirada);
-            this.grpEntrega.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.grpEntrega.Location = new System.Drawing.Point(9, 164);
-            this.grpEntrega.Name = "grpEntrega";
-            this.grpEntrega.Size = new System.Drawing.Size(319, 63);
-            this.grpEntrega.TabIndex = 1;
-            this.grpEntrega.TabStop = false;
-            this.grpEntrega.Text = "Tipo de Entrega";
-            // 
-            // rdbEntrega
-            // 
-            this.rdbEntrega.AutoSize = true;
-            this.rdbEntrega.Location = new System.Drawing.Point(98, 25);
-            this.rdbEntrega.Name = "rdbEntrega";
-            this.rdbEntrega.Size = new System.Drawing.Size(81, 22);
-            this.rdbEntrega.TabIndex = 0;
-            this.rdbEntrega.TabStop = true;
-            this.rdbEntrega.Text = "Entrada";
-            this.rdbEntrega.UseVisualStyleBackColor = true;
-            // 
-            // rdbRetirada
-            // 
-            this.rdbRetirada.AutoSize = true;
-            this.rdbRetirada.Location = new System.Drawing.Point(6, 25);
-            this.rdbRetirada.Name = "rdbRetirada";
-            this.rdbRetirada.Size = new System.Drawing.Size(86, 22);
-            this.rdbRetirada.TabIndex = 0;
-            this.rdbRetirada.TabStop = true;
-            this.rdbRetirada.Text = "Retirada";
-            this.rdbRetirada.UseVisualStyleBackColor = true;
-            // 
-            // btnAdicionarItem
-            // 
-            this.btnAdicionarItem.Location = new System.Drawing.Point(9, 413);
-            this.btnAdicionarItem.Name = "btnAdicionarItem";
-            this.btnAdicionarItem.Size = new System.Drawing.Size(319, 36);
-            this.btnAdicionarItem.TabIndex = 4;
-            this.btnAdicionarItem.Text = "Adicionar Item";
-            this.btnAdicionarItem.UseVisualStyleBackColor = true;
-            // 
             // grpResumo
             // 
+            this.grpResumo.BackColor = System.Drawing.Color.MediumPurple;
             this.grpResumo.Controls.Add(this.lblDataHora);
             this.grpResumo.Controls.Add(this.lblProtocolo);
             this.grpResumo.Controls.Add(this.lblResumo);
             this.grpResumo.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.grpResumo.Location = new System.Drawing.Point(378, 36);
+            this.grpResumo.Location = new System.Drawing.Point(369, 47);
             this.grpResumo.Name = "grpResumo";
-            this.grpResumo.Size = new System.Drawing.Size(362, 464);
+            this.grpResumo.Size = new System.Drawing.Size(371, 453);
             this.grpResumo.TabIndex = 2;
             this.grpResumo.TabStop = false;
             this.grpResumo.Text = "Resumo do Pedido";
+            // 
+            // lblDataHora
+            // 
+            this.lblDataHora.AutoSize = true;
+            this.lblDataHora.Location = new System.Drawing.Point(6, 197);
+            this.lblDataHora.Name = "lblDataHora";
+            this.lblDataHora.Size = new System.Drawing.Size(0, 18);
+            this.lblDataHora.TabIndex = 0;
+            // 
+            // lblProtocolo
+            // 
+            this.lblProtocolo.AutoSize = true;
+            this.lblProtocolo.Location = new System.Drawing.Point(6, 179);
+            this.lblProtocolo.Name = "lblProtocolo";
+            this.lblProtocolo.Size = new System.Drawing.Size(0, 18);
+            this.lblProtocolo.TabIndex = 0;
             // 
             // lblResumo
             // 
             this.lblResumo.AutoSize = true;
             this.lblResumo.Location = new System.Drawing.Point(6, 40);
             this.lblResumo.Name = "lblResumo";
-            this.lblResumo.Size = new System.Drawing.Size(63, 18);
+            this.lblResumo.Size = new System.Drawing.Size(0, 18);
             this.lblResumo.TabIndex = 0;
-            this.lblResumo.Text = "Pedido:";
-            // 
-            // lblProtocolo
-            // 
-            this.lblProtocolo.AutoSize = true;
-            this.lblProtocolo.Location = new System.Drawing.Point(6, 129);
-            this.lblProtocolo.Name = "lblProtocolo";
-            this.lblProtocolo.Size = new System.Drawing.Size(119, 18);
-            this.lblProtocolo.TabIndex = 0;
-            this.lblProtocolo.Text = "Protocolo: 0000";
-            // 
-            // lblDataHora
-            // 
-            this.lblDataHora.AutoSize = true;
-            this.lblDataHora.Location = new System.Drawing.Point(6, 147);
-            this.lblDataHora.Name = "lblDataHora";
-            this.lblDataHora.Size = new System.Drawing.Size(97, 18);
-            this.lblDataHora.TabIndex = 0;
-            this.lblDataHora.Text = "Data e Hora:";
             // 
             // brnGerarPedido
             // 
+            this.brnGerarPedido.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.brnGerarPedido.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.brnGerarPedido.ForeColor = System.Drawing.Color.Honeydew;
             this.brnGerarPedido.Location = new System.Drawing.Point(12, 530);
             this.brnGerarPedido.Name = "brnGerarPedido";
             this.brnGerarPedido.Size = new System.Drawing.Size(240, 36);
@@ -281,7 +291,9 @@
             // 
             // btnGerarNovoPedido
             // 
+            this.btnGerarNovoPedido.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnGerarNovoPedido.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnGerarNovoPedido.ForeColor = System.Drawing.Color.Honeydew;
             this.btnGerarNovoPedido.Location = new System.Drawing.Point(258, 530);
             this.btnGerarNovoPedido.Name = "btnGerarNovoPedido";
             this.btnGerarNovoPedido.Size = new System.Drawing.Size(240, 36);
@@ -292,7 +304,9 @@
             // 
             // btnSair
             // 
+            this.btnSair.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnSair.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnSair.ForeColor = System.Drawing.Color.Honeydew;
             this.btnSair.Location = new System.Drawing.Point(504, 530);
             this.btnSair.Name = "btnSair";
             this.btnSair.Size = new System.Drawing.Size(240, 36);
@@ -304,6 +318,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.Color.Indigo;
             this.ClientSize = new System.Drawing.Size(752, 578);
             this.Controls.Add(this.btnSair);
             this.Controls.Add(this.btnGerarNovoPedido);
@@ -316,10 +331,10 @@
             this.Load += new System.EventHandler(this.Form1_Load);
             this.grpEntrada.ResumeLayout(false);
             this.grpEntrada.PerformLayout();
-            this.grpOpcoes.ResumeLayout(false);
-            this.grpOpcoes.PerformLayout();
             this.grpEntrega.ResumeLayout(false);
             this.grpEntrega.PerformLayout();
+            this.grpOpcoes.ResumeLayout(false);
+            this.grpOpcoes.PerformLayout();
             this.grpResumo.ResumeLayout(false);
             this.grpResumo.PerformLayout();
             this.ResumeLayout(false);
